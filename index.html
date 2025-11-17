@@ -4,11 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>JavaScript Algo</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link
+		rel="stylesheet" href="dist/theme/black.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,9 +17,97 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+				<section>Introduction à JavaScript</section>
+
+				<section>
+					<h2>Déclaration de variables</h2>
+					<pre><code class="javascript">
+					// Déclaration de variables
+					let phrase = "L'herbe est plus verte";
+					let nombre = 42;
+					const PI = 3.14159265359;
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Affichage simple</h2>
+					<pre><code class="javascript">
+					// Affichage simple dans la console
+					console.log(phrase);
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Opérations et template literals</h2>
+					<pre><code class="javascript">
+					// Opérations mathématiques
+					let resultat = nombre - 2;
+
+					// Affichage moderne
+					console.log(`La phrase secrète est "${phrase}", le résultat est ${resultat} et le nombre PI est de ${PI}.`);
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Fonctions</h2>
+					<pre><code class="javascript">
+					// Définition d'une fonction
+					function multiplication(a, b) {
+						return a * b;
+					}
+
+					// Utilisation
+					let resultatMultiplication1 = multiplication(3, 4);
+					console.log(`Résultat de 3 x 4 = ${resultatMultiplication1}`);
+					</code></pre>
+			</section>
+
+			<section>
+				<h2>Fonctions - exemples supplémentaires</h2>
+				<pre><code class="javascript">
+				let resultatMultiplication2 = multiplication(6, 98);
+				console.log(`Résultat de 6 x 98 = ${resultatMultiplication2}`);
+
+				// Vérification pair ou impair
+				function estPair(nombre) {
+					return nombre % 2 === 0;
+				}
+				console.log(`Le nombre ${nombre} est-il pair ? ${estPair(nombre)}`);
+				</code></pre>
+			</section>
+
+			<section>
+				<h2>Types et inférence de type</h2>
+				<p>
+					En JavaScript, les types de variables principaux sont : <code>integer</code>, <code>string</code>, <code>boolean</code> et <code>array</code>.
+					JavaScript déduit automatiquement le type d'une variable (inférence de type).
+				</p>
+			</section>
+
+			<section>
+				<h2>Tout est objet</h2>
+				<p>
+					Tout en JavaScript est un objet. Une fois le type détecté, la variable peut utiliser toutes les méthodes associées à ce type.
+				</p>
+			</section>
+
+			<section>
+				<h2>Programmation orientée objet (POO)</h2>
+				<p>
+					Une classe est une représentation abstraite. Un objet est une instance concrète d'une classe.
+					Exemple : classe <code>Humain</code>, chaque personne est un objet.
+				</p>
+			</section>
+
+			<section>
+				<h2>Propriétés et méthodes</h2>
+				<ul>
+					<li><strong>Propriétés :</strong> définissent l'état ou les caractéristiques (ex : <code>nom</code>, <code>dateDeNaissance</code>)</li>
+					<li><strong>Méthodes :</strong> représentent les actions que l'objet peut effectuer (ex : <code>parler()</code>, <code>marcher()</code>)</li>
+				</ul>
+			</section>
+
+		</div>
 		</div>
 
 		<script src="dist/reveal.js"></script>
